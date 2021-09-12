@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University - {% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <header>
+        <h1>University</h1>
+    </header>
+    <hr>
+    <nav>
+        <div class="row">
+            <div class="col-md-12 left">
+
+                <a href="/">Головна</a>
+
+                <a href="/unit">Підрозділи</a>
+
+                <a href="/science">Наука</a>
+
+                <a href="/accreditation">Акредитація</a>
+
+                <a href="/entrants">Вступникам</a>
+
+                <a href="/students">Студентам</a>
+
+                <a href="/about">Про Університет</a>
+
+                <a href="/contact">Контакти</a>
+
+                <a href="/users/login">Вхід</a>
+
+                <a href="/users/register">Реєстрація</a>
+
+            </div>
+
+    </nav>
+    <hr>
+    <main>{% block content %}{% endblock %}
+    </main>
+    <footer>
+        <h6>Copyright: MyUniversity - Kyiv, 2021</h6>
+    </footer>
+</body>
+</html>

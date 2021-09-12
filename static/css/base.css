@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    padding: 20px 5%;
+    background-image: url('../img/fone.jpg');
+    background-size: 100%;
+    color: indigo;
+    font: 14pt 'Arial';
+}
+
+Header>h1 {
+    color: indigo;
+    font-size: 30pt;
+}
+
+nav {
+    padding: 0px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    line-height: 2;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+header {
+    padding-top: 20px;
+}
+
+footer>h6 {
+    position: fixed; /* Фиксированное положение */
+    bottom: 10px; /* Левый нижний угол */
+    padding: 10px;
+}
